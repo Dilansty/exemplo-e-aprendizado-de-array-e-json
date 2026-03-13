@@ -232,20 +232,51 @@
                 cores[1]
             ],
             "valor": 800.50 
-            }
+            },
+        
+            {"id": 2,
+                "nome": "teclado",
+                "descricao": "teclado mecanico RGB",
+                "marca":[
+                 marcas[5].marca
+                ],
+                "qtde": 200,
+                "cor":cores,
+                "valor": 150 
+                },
+            
+                
+            {"id": 3,
+                "nome": "mouse",
+                "descricao": "sem fio",
+                "marca":[
+                    marcas[1].marca,
+                    marcas[4].marca,
+                    marcas[5].marca
+                ],
+                "qtde": 200,
+                "cor":cores,
+                "valor": 150 
+                }
+        
             
         ]
+
+        
+        
+        
         //console.table(cores)
 
         //console.log(cores[2].cor)
 
-        console.table(produtos) 
-        console.log(produtos[0].cor)  
-        console.log(produtos[0].cor[1].cor)    
+           
 
-        produtos[0].cor.forEach(function(nomeCor){
-            console.log(`A cor do produto é: ${nomeCor.cor}`)
-        })
+        // produtos[0].cor.forEach(function(nomeCor){
+        //     console.log(produtos)
+        // })
+        for (const nomeDaCor of id[0]) {
+            console.log(produtos[0].id)
+        }
     }
 
 
@@ -260,6 +291,6 @@
     // removerItem('Bruna')
 
     // console.log(verificarItem('alla'))
-    console.log(quantidadeItens('maria'))
-    criandoDadosJSON()
+    // console.log(quantidadeItens('maria'))
+    // criandoDadosJSON()
     cadastroDeProdutos()
